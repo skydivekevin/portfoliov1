@@ -1,29 +1,27 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
-
-import Projects from "../Projects/Projects";
-import Home from "../Home";
-import Ridiculousness from "../Ridiculousness/ReactRidiculousness/Ridiculousness";
+import { Link } from "react-router-dom";
 
 import "../../App.css";
 
-function Navbar() {
+function Nav() {
   return (
-    <div className='App'>
-      <h3>I'm the Navbar!</h3>
-      <Router>
-        <Link to={"Ridiculousness"}>Link to Ridiculousness</Link>
-        <Link to={"Projects"}>Link to Projects</Link>
-        <Link to={"Home"}>Link to Home</Link>
+    <div className='Navbar'>
+      <header>
+        <h3>I'm the Navbar!</h3>
+        <Link className='navbarLink' to='/'>
+          Link To Home
+        </Link>
+        <Link className='navbarLink' to={"/Ridiculousness"}>
+          Link to Ridiculousness
+        </Link>
+        <Link className='navbarLink' to={"/Projects"}>
+          Link to Projects
+        </Link>
 
-        <Switch>
-          <Route path='/Ridiculousness/' component={Ridiculousness} />
-          <Route path='/Projects/' component={Projects} />
-          <Route path='/Home' component={Home} />
-        </Switch>
-      </Router>
+        <h3>End of navbar component</h3>
+      </header>
     </div>
   );
 }
 
-export default Navbar;
+export default Nav;

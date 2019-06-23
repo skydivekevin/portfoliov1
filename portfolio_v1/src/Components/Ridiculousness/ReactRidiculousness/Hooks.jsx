@@ -2,7 +2,7 @@ import React from "react";
 
 function Hooks() {
   return (
-    <div className='App'>
+    <div className='Hooks'>
       <h1>Hello from inside Hooks.jsx!</h1>
     </div>
   );

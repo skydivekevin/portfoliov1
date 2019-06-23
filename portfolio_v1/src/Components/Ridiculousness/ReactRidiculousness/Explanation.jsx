@@ -2,7 +2,7 @@ import React from "react";
 
 function Explanation() {
   return (
-    <div className="App">
+    <div className='Explanation'>
       <h1>You're probably asking yourself, why? This is why.</h1>
       <p>
         For a while, I was a React Denier. Yes, I know...but it's true. I was a

@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className='App'>
+    <div className='Footer'>
       <h1>Hello from inside Footer.jsx inside ReactRidiculousness!</h1>
     </div>
   );

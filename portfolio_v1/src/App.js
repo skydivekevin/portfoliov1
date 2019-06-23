@@ -1,12 +1,21 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import "./App.css";
-// import Ridiculousness from "./Components/Ridulousness/ReactRidiculousness/Ridiculousness";
+import Projects from "./Components/Projects/Projects";
+import Ridiculousness from "./Components/Ridiculousness/ReactRidiculousness/Ridiculousness";
 import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   return (
     <div className='App'>
-      <Navbar />
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/Ridiculousness' component={Ridiculousness} />
+          <Route path='/Projects' component={Projects} />
+        </Switch>
+      </Router>
     </div>
   );
 }
